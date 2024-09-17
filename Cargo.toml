@@ -1,0 +1,19 @@
+[package]
+name = "bn254-check"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v0.3.0", features = [
+  "circuit-params",
+  "derive_serde",
+] }
+rand = "0.8"
+ark-bn254 = "0.4"
+ark-ec = "0.4"
+ark-ff = "0.4"
+ark-std = "0.4"
+num-bigint = "0.4"
+plonky2-bn254-pairing = { git = "https://github.com/qope/plonky2-bn254-pairing" }
+hex = "0.4"
+bincode = "1.3"
